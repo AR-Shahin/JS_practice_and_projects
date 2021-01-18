@@ -27,3 +27,12 @@ for (let color of colors){
 
 var x = typeof colors;
 print(x)
+
+let i =0
+const btn = document.querySelector('#btn').addEventListener('click',function(e){
+    e.preventDefault();
+    this.style.background = colors[i]
+    this.style.color = '#fff' 
+    i == colors.length ? i=0: i++
+
+})
