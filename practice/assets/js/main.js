@@ -18,10 +18,11 @@ parent.appendChild(span).innerHTML = 44
 parent.appendChild(span)
 parent.appendChild(span)
 
-
-
-
-
-print(parent)
+const input = $('#input')
+const text = $('#text')
+input.onkeyup = function(){
+    print(this.value)
+    text.innerHTML = this.value
+}
 
 
