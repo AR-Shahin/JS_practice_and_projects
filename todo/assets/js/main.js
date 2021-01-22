@@ -14,10 +14,17 @@ form.addEventListener('submit',function(e){
     if(name.value == '' || phone.value == ''){
         alert('Filed must not be empty!')
     }else{
-        tbody.appendChild((addNewRow(name.value , phone.value)))
+//        tbody.appendChild((addNewRow(name.value , phone.value)))
+        addNewRow(name.value , phone.value)
         name.value = ''
-        phone.value = ''
+        phone.value = '';
     }
+    
+          //delete
+    let deleteRow = $('.deleteRow')
+    deleteRow.addEventListener('click',function(){
+        print(55)
+    })
     
     })
 
@@ -46,8 +53,9 @@ function addNewRow(name,phone){
     newDelete.innerHTML = '<a class="btn btn-sm btn-danger text-light deleteRow">Delete</a>'
     newRow.appendChild(newDelete)
 
-    // tbody.appendChild(newRow)
-    return newRow
+     tbody.appendChild(newRow)
+    
+    //return newRow
 }
 
 

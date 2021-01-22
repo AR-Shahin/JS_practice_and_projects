@@ -2,7 +2,7 @@ let $ = (data) => document.querySelector(data);
 let print = (data) => console.log(data)
 
 
-const texts = ['photographer','designer','web developer']
+const texts = ['Photographer','Web designer','Web developer']
 
 let count = 0
 let index = 0
