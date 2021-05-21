@@ -29,9 +29,11 @@ form.addEventListener('submit',function(e){
     })
 
 //3. template design
+let  i =0
 function addNewRow(name,phone){
     let i = 0
     const newRow = create('tr')
+    newRow.addClass=
 
     //new Sl
     const newSl = create('td')

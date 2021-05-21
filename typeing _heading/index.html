@@ -28,14 +28,22 @@
                     opacity: 1;
                 }
             }
-      
+            .mid{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
         </style>
     </head>
-    <body class="bg-dark">
+    <body class="bg-dark" style="position: relative;">
         <div class="container mt-5">
-            <div class="row justify-content-center mt-5">
+            <div class="row justify-content-center">
                 <div class="col-6 mt-5">
-                    <h1 class="d-inline text-light">I'm a </h1><h5 id="dynamicText" class="text-primary d-inline"></h5><span id="bip"></span>
+                    <div class="mid" style="margin-top:200px;">
+                    <h1 class="d-inline text-light">I'm a </h1>
+                    <h5 id="dynamicText" class="text-primary d-inline"></h5><span id="bip"></span>
+                    </div>
                 </div>
             </div>
         </div>
