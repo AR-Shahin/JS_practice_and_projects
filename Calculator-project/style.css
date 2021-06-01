@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #2c3e50;
+    position: relative;
+    font-family: sans-serif;
+}
+
+#calculator{
+	width: 320px;
+	height: 550px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 150px;;
+    left: 40%;
+	position: absolute;
+	border-radius: 5px;
+    transition: .6s;
+}
+#calculator:hover{
+    box-shadow: 0 4px 12px 0 rgba(142, 68, 173, 0.88), 0 6px 20px 0 rgba(155, 89, 182, 0.83);
+}
+#output-value{
+    border: 1px solid rgba(204, 204, 204, 0.35);
+    background: #ccc;
+    display: block;
+    border-radius: 2px;
+    padding: 2px;
+}
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 20%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.number, .empty{
+	background-color: #eaedef;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 20px;
+    background-color: rgba(255, 119, 58, 0.94);
+    transition: .6s;
+}
+button:nth-child(4):hover{
+    background-color: #f3a683;
+}
+button:nth-child(8){
+	font-size: 20px;
+    background-color: #ffb418;
+    transition: .6s;
+}
+button:nth-child(8):hover{
+    background-color: #f7d794;
+}
+button:nth-child(12){
+	font-size: 20px;
+     background-color: #fc4c4c;
+    transition: .6s;
+}
+button:nth-child(12):hover{
+  background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #526bbf;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #7a569b;
+    transition: .6s;
+}
+button:nth-child(20):hover{
+    background: #612993;
+}
+a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+.author{
+    color: #2c3e50;
+    display: inline-block;
+    margin-left: 110px;
+    padding-bottom: 20px;
+    opacity: .5;
+    margin-top: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.author:hover a{
+    text-decoration: underline;
+}
