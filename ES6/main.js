@@ -108,7 +108,25 @@ let arr = [1,2,3,4,5]
 // let school = obj?.education?.school?.name
 // print(school)
 
-(async function(){
-    const {PI} = await import('./inc/inc.js')
-})()
-print(PI)
+// (async function(){
+//     const {PI} = await import('./inc/inc.js')
+// })()
+// print(PI)
+
+
+// Promise 
+// let isMeeting = true
+// let myPromise = new Promise((resolve,reject)=>{
+//     if(isMeeting){
+//         resolve('OK')
+//     }else{
+//         reject('Failed!!')
+//     }
+// })
+
+// myPromise.then((res) => {
+//     print(res)
+// })
+// .catch(err => {
+//     print(err)
+// })
