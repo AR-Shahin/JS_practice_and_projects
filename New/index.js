@@ -6,6 +6,7 @@
 // name = 'shahin'
 // let name
 // console.log(name);
+// "use strict"
 {
     let x = 10
     // console.log(x);
@@ -77,11 +78,77 @@ ss`)
 let header = "Templates Literals";
 let tags = ["template literals", "javascript", "es6"];
 
-let html = `<h2>${header}</h2><ul>`;
-for (const x of tags) {
-  html += `<li>${x}</li>`;
+// let html = `<h2>${header}</h2><ul>`;
+// for (const x of tags) {
+//   html += `<li>${x}</li>`;
+// }
+
+// html += `</ul>`;
+
+// print(html)
+
+
+// let omi = 'omi is my friend'
+// print(omi.split(" "))
+print(Number.MIN_VALUE)
+let a = [10,20,30,50]
+
+// if(a instanceof Array){
+//     print(6)
+// }
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// print(fruits.toString())
+print(fruits.join('-'))
+const person = {fname:"John", lname:"Doe", age:25};
+
+// let textt = "";
+// for (let x in person) {
+//     print(x)
+//   textt += person[x];
+// }
+// print(textt)
+try{
+  //  throw 'ami'
+    prisnt('try')
+}catch(e){
+ 
+    print(e.message)
+}
+finally{
+    print('finally')
 }
 
-html += `</ul>`;
+myFunction();
 
-print(html)
+// code here can use carName
+
+function myFunction() {
+  var carName = "Volvo";
+  print(carName)
+}
+
+let sucks = 14
+function duck(name){
+    print(this.name)
+}
+duck(22)
+// print(this)
+class Base{
+    constructor(){
+        
+    }
+    base(){
+        print('base')
+    }
+}
+class Car extends Base{
+    constructor(name){
+        this.name = name
+    }
+    printName() {
+        print(this.name)
+    }
+}
+
+let car = new Car('audi')
+car.base()
