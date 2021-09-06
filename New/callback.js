@@ -27,7 +27,7 @@ const print = (el = 'content') => console.log(el)
 //     console.log('Reference Func' + params)
 // })
 
-
+const mailSentByCustom = (email) => print(`Mail Sent By Custom (${email})`)
 function somethingDo(email,callback) {
     callback(email)
 }
@@ -38,3 +38,5 @@ somethingDo('s@mail.com',function (email) {
 somethingDo('s@mail.com',function (email) {
     console.log(`Mail Sent By Gmail (${email})`)
 })
+
+somethingDo('c@mail.com',mailSentByCustom)
