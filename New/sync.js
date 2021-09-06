@@ -46,7 +46,7 @@ const processOrder = (customer,callback) => {
 }
 
 
-takeOrder('cus 1', (customer) => {
+takeOrder('Shahin', (customer) => {
     processOrder(customer,(customer)=> {
         completeOrder(customer,(customer) =>{
             sayGoodBye(customer)
@@ -54,10 +54,10 @@ takeOrder('cus 1', (customer) => {
     })
 })
 
-takeOrder('cus 1', (customer) => {
-    processOrder(customer,(customer)=> {
-        completeOrder(customer,sayGoodBye)
-    })
-})
+// takeOrder('cus 1', (customer) => {
+//     processOrder(customer,(customer)=> {
+//         completeOrder(customer,sayGoodBye)
+//     })
+// })
 print('hello')
 // takeOrder()
