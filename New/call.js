@@ -9,12 +9,21 @@ let printName = function (p1,p2) {
     print(`Name is ${this.name} | ${p1} ${p2}`)
 }
 
-let obj = {
-    name : 'shahin',
-    age : 21
-}
+// let obj = {
+//     name : 'shahin',
+//     age : 21
+// }
 
 // printName.call(obj,1,'d')
 // printName.apply(obj,[1,'d'])
-let binding = printName.bind(obj,1,'d')
-binding()
+// let binding = printName.bind(obj,1,'d')
+// binding()
+
+const obj = {
+    name : 'Shahin',
+    age : 21,
+    printName : ()=> {
+      console.log(obj.name) // undefined
+    }
+}
+obj.printName()
