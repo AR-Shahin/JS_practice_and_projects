@@ -5,10 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+        }
+        #div{
+            margin-top: 15px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        #table{
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 45%;
+            border: 1px solid salmon;
+        }
+    </style>
 </head>
 <body>
     <h1>JS Practice</h1>
+    <hr>
+    <div id="div">
+        <button id="loadData">Load Data</button>
+        <button id="postData">Post Data</button>
+        <table id="table" border="1" style="text-align: center;">
+            <tr>
+                <th>Sl</th>
+                <th>Title</th>
+                <th>Note</th>
+                <th>Comment</th>
+            </tr>
+            <tbody id="#ajaxData"></tbody>
+        </table>
+    </div>
     <!-- <script src="./index.js"></script> -->
-    <script src="./call.js"></script>
+    <script src="./xhr.js"></script>
 </body>
 </html>
