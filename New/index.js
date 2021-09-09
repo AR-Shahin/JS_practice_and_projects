@@ -71,9 +71,9 @@ const print = (el = 'conent') => console.log(el)
 // print(t.match(/ain/g)  )
 
 let text = "Hello world, welcome to the universe. ";
-print(text.includes("world", 1))    // Returns false
-print( `hwy may 
-ss`)
+// print(text.includes("world", 1))    // Returns false
+// print( `hwy may 
+// ss`)
 
 let header = "Templates Literals";
 let tags = ["template literals", "javascript", "es6"];
@@ -90,15 +90,15 @@ let tags = ["template literals", "javascript", "es6"];
 
 // let omi = 'omi is my friend'
 // print(omi.split(" "))
-print(Number.MIN_VALUE)
-let a = [10,20,30,50]
+// // print(Number.MIN_VALUE)
+// let a = [10,20,30,50]
 
 // if(a instanceof Array){
 //     print(6)
 // }
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // print(fruits.toString())
-print(fruits.join('-'))
+// print(fruits.join('-'))
 const person = {fname:"John", lname:"Doe", age:25};
 
 // let textt = "";
@@ -107,48 +107,66 @@ const person = {fname:"John", lname:"Doe", age:25};
 //   textt += person[x];
 // }
 // print(textt)
-try{
-  //  throw 'ami'
-    prisnt('try')
-}catch(e){
+// try{
+//   //  throw 'ami'
+//     prisnt('try')
+// }catch(e){
  
-    print(e.message)
-}
-finally{
-    print('finally')
-}
+//     print(e.message)
+// }
+// finally{
+//     print('finally')
+// }
 
-myFunction();
+// myFunction();
 
-// code here can use carName
+// // code here can use carName
 
-function myFunction() {
-  var carName = "Volvo";
-  print(carName)
-}
+// function myFunction() {
+//   var carName = "Volvo";
+//   print(carName)
+// }
 
-let sucks = 14
-function duck(name){
-    print(this.name)
-}
-duck(22)
-// print(this)
-class Base{
-    constructor(){
+// let sucks = 14
+// function duck(name){
+//     print(this.name)
+// }
+// duck(22)
+// // print(this)
+// class Base{
+//     constructor(){
         
-    }
-    base(){
-        print('base')
-    }
-}
-class Car extends Base{
-    constructor(name){
-        this.name = name
-    }
-    printName() {
-        print(this.name)
-    }
-}
+//     }
+//     base(){
+//         print('base')
+//     }
+// }
+// class Car extends Base{
+//     constructor(name){
+//         this.name = name
+//     }
+//     printName() {
+//         print(this.name)
+//     }
+// }
 
-let car = new Car('audi')
-car.base()
+// let car = new Car('audi')
+// car.base()
+// Primitive datatype which is expected behavior 
+
+// let a = 10;
+// let b = a;
+// print(a)
+// print(b)
+
+
+let a = {name: 'shahin'}
+let b = a
+let c = b
+c.name = 'bappy'
+a = {}
+print(a)
+print(b)
+
+// Reference datatype which is unexpected behavior
+// Primitive type stack e data rakhe and Reference type heap e data rakhe
