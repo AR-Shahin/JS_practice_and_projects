@@ -36,5 +36,30 @@ let h1 = id('h1');
 // let li = $('.first_ul .item:first-child')
 // print(li)
 
-let li = $('.first_ul .item:nth-child(4)')
-print(li.innerText)
+// let li = $('.first_ul .item:nth-child(4)')
+// print(li.innerText)
+
+
+// Traverse 
+
+// Children
+
+// let parent = $('.first_ul');
+// dir(parent.children)
+
+// let grand = $('#grand')
+// let parent = grand.children
+// print(parent)
+
+ // Parent element
+
+// let item = $('.item')
+// let parent = item.closest('#grand')
+// print(parent)
+
+// Siblings 
+// next 
+// let children = $('.item')
+// let next = children.nextElementSibling;
+// print(next.innerHTML)
+

@@ -130,3 +130,6 @@ let arr = [1,2,3,4,5]
 // .catch(err => {
 //     print(err)
 // })
+
+// let res = await myPromise
+// print(res)
