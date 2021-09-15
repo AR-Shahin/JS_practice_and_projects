@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+header video {
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+}
+header::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 17, 17, 0.384);
+}
+.icons {
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  top: 30%;
+  right: 0;
+  z-index: 1;
+}
+.icons i {
+  margin: 0 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.185);
+}
