@@ -12,6 +12,9 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .line{
+            text-decoration:line-through
+        }
     </style>
 </head>
 <body>
@@ -21,10 +24,16 @@
         <hr>
         <div class="row justify-content-center">
             <div class="col-8">
-                <form action="">
+                <form action="" id="addForm">
                     <div class="form-group d-flex">
                         <input type="text" class="form-control" id="name" placeholder="Enter Name">
                         <button class="btn btn-success" type="submit">Submit</button>
+                    </div>
+                </form>
+                <form action="" id="editForm">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control" id="editName" placeholder="Enter Name">
+                        <button class="btn btn-success" type="submit">Update</button>
                     </div>
                 </form>
                 <table class="mt-5 table table-bordered text-center">
@@ -51,6 +60,34 @@
 
                </ul>
             </div>
+        </div>
+        <hr>
+    </div>
+    <hr>
+    <div class="row  justify-content-center">
+        <div class="col-8">
+            <form action="" id="addFormThird">
+                <div class="form-group d-flex">
+                    <input type="text" class="form-control" id="nameThird" placeholder="Enter Name">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </form>
+            <table class="mt-5 table table-bordered text-center">
+                <tr>
+                    <th>SL</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody id="tbodyThird">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td><span>Shahin</span></td>
+                        <td>
+                            <button class="btn btn-sm btn-danger" id="delBtn">Delete</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="./app.js"></script>
