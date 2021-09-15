@@ -63,3 +63,13 @@ let h1 = id('h1');
 // let next = children.nextElementSibling;
 // print(next.innerHTML)
 
+let grandParent = $('#grandParent');
+let parents = grandParent.children
+// let first = parents[0].children
+let first = parents[0].querySelectorAll('.child')
+
+// let gp = first[0].parentElement.parentNode
+let gp = first[0].closest('#grandParent')
+
+print(gp)
+
