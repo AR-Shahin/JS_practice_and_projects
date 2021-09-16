@@ -69,7 +69,16 @@ let parents = grandParent.children
 let first = parents[0].querySelectorAll('.child')
 
 // let gp = first[0].parentElement.parentNode
-let gp = first[0].closest('#grandParent')
+// let gp = first[0].closest('#grandParent')
 
-print(gp)
+// let c2 = $('.child2')
 
+// let pv = c2.parentElement.nextElementSibling;
+
+let child22_2 = $('.child22_2')
+changeBg(child22_2.parentNode.parentNode.parentElement)
+
+function changeBg(el) {
+    el.style.background = 'yellow';
+    el.style.cursor = 'pointer'
+}
