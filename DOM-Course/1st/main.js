@@ -1,47 +1,45 @@
 const log = (el) => console.log(el);
 const $ = (el) => document.querySelector(el);
 
-// DOM Traverse 
+const root = $('#root')
 
-let grandParent = $('#grandParent');
+const div = document.createElement('div');
+const h2 = document.createElement('h2');
+h2.innerText = 'Custom H2'
 
-// changeBg(grandParent)
-// log(grandParent)
-let grandChildrens = grandParent.children
+const h3 = document.createElement('h3');
+h3.innerText = 'Custom h3'
 
+const p = document.createElement('p');
+p.innerText = 'Custom p'
 
-let parent1 = grandChildrens[0];
+const a = document.createElement('a');
+a.innerText = 'Custom a'
+// div.appendChild(h2)
+div.append(h2,h3,p)
+div.prepend(a)
 
+// a.setAttribute('href','google.com')
+a.href = 'https://tutspack.com/'
+a.setAttribute('id','btn')
 
+a.classList.add('bg_red','text_white')
+// a.classList.remove('bg_red')
+log(a.classList)
 
-
-let childsOfParentOne = parent1.children
-let parentOneChildThree = childsOfParentOne[2]
-// changeBg(parentOneChildThree)
-
-let parentOneChildTwo = parentOneChildThree.previousElementSibling
-
-let parentOneChildOne = parentOneChildTwo.previousElementSibling
-
-let parentOneChildTwoFromChildOne = parentOneChildOne.nextElementSibling
-
-
-let parentTwo = grandChildrens[1]
-
-let parentTwoChilds = parentTwo.children
-
-let parentTwoSecondChild = parentTwoChilds[1]
-
-log()
+root.appendChild(div)
 
 
+let img = $('img')
 
-let child22_3 = $('.child22_c')
+img.setAttribute('width','200px')
+img.dataset.test = 'test'
+img.dataset.test1 = 'test1'
+img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png'
 
-log(child22_3.parentNode)
 
-changeBg(child22_3.parentNode.parentElement.parentElement)
-// changeBg(parentTwoSecondChild.children[1]);
-function changeBg(el) {
-    el.style.backgroundColor = 'red'
-}
+a.addEventListener('click',function (e) {
+    e.preventDefault();
+    let body = $('body')
+    body.classList.toggle('bg_purple');
+})

@@ -11,37 +11,23 @@
   padding: 10px;
   text-align: center;
 }
-.parent {
-  height: 150px;
-  width: 450px;
-  background: teal;
-  margin: 10px auto;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
+
+.text_red {
+  color: red;
+}
+.bg_red {
+  background: red;
 }
 
-.child {
-  background: green;
-  flex-basis: 30%;
+.bg_white {
+  background: #fff;
+}
+.text_white {
   color: #fff;
-  border: 3px solid rgb(156, 60, 60);
 }
-.child2 {
-  background: tomato;
+.bg_purple {
+  background: purple;
 }
-.child22 {
-  background: orange;
-  padding: 5px;
-}
-
-.child22_c {
-  height: 30px;
-  width: 100%;
-  background: olive;
-  margin: 5px 0;
-}
-.child22_2 {
-  background: teal;
+.text_purple {
+  color: purple;
 }
